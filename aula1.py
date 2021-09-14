@@ -1,3 +1,8 @@
+#Programa recebe dados do usuário e informa se pode ser doador de sangue.
+#Não pode doar: Não pode ter idade menor que 19 anos e mais que 69 anos | Peso menor que 50kg 
+#| Ingestao de alcool nas ultimas 12hs | Ter feito tatuagem no ultimo ano.
+
+#Declaração de variaveis
 imped_idade =''
 imped_peso =''
 imped_bebida =''
@@ -6,7 +11,7 @@ idade = int (input('Digite a idade:'))
 peso = int (input('Digite o peso:'))
 bebida = int (input('Ingeriu bebida alcolica nas ultimas 12hs? Digite: 1- Para sim ou 2- Para não: '))
 tatuagem = int (input('Fez alguma tatuagem no ultimo ano? Digite: 1- Para sim ou 2- Para não: '))
-
+#Testes de apto ou inapto
 if idade < 19 or idade > 69:
     imped_idade = "Idade fora da faixa de doação."
 
